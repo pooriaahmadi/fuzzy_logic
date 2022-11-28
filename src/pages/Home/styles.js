@@ -12,8 +12,22 @@ export const Title = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    > h1 {
-        font-size: 64px;
+    position: relative;
+    flex-direction: column;
+    > h2 {
+        font-size: 24px;
         font-weight: normal;
+        padding-top: 17px;
+        > a {
+            color: #0069ff;
+            text-decoration: none;
+        }
     }
+`;
+
+export const CustomFuzzy = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
 `;

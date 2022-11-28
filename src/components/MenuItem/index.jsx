@@ -7,15 +7,14 @@ const MenuItem = ({ color, children, link, id, currentId, setId }) => {
     };
 
     return (
-        // <Link to={link}>
         <MenuLink
+            to={link}
             onClick={handleClick}
             selected={id === currentId}
             color={color}
         >
             <p>{children}</p>
         </MenuLink>
-        // </Link>
     );
 };
 

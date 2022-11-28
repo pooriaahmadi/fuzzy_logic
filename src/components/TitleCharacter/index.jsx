@@ -1,17 +1,30 @@
 import { TitleCharacterMain } from "./styles";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getRandomNumber } from "../../utils/numbers";
 
-const getRandomNumber = ({ min, max }) => {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-
-const TitleCharacter = ({ children, size }) => {
-    const [y, setY] = useState(getRandomNumber({ min: -5, max: 5 }));
-    const [rotation, setRotation] = useState(
-        getRandomNumber({ min: -30, max: 30 })
-    );
+const TitleCharacter = ({
+    children,
+    size,
+    translationYLimit,
+    translationXLimit,
+    rotationLimit,
+}) => {
+    const [y, setY] = useState();
+    const [x, setX] = useState();
+    const [rotation, setRotation] = useState();
+    useEffect(() => {
+        setY(
+            getRandomNumber({ min: -translationYLimit, max: translationXLimit })
+        );
+        setX(
+            getRandomNumber({ min: -translationXLimit, max: translationXLimit })
+        );
+        setRotation(
+            getRandomNumber({ min: -rotationLimit, max: rotationLimit })
+        );
+    }, []);
     return (
-        <TitleCharacterMain y={y} rotation={rotation} size={size}>
+        <TitleCharacterMain x={x} y={y} rotation={rotation} size={size}>
             {children}
         </TitleCharacterMain>
     );

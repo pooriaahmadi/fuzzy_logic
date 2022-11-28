@@ -2,7 +2,7 @@ import { useState } from "react";
 import MenuItem from "../MenuItem";
 import { MenuDiv } from "./styles";
 
-const LINKS = [
+export const LINKS = [
     {
         color: "#8ac926",
         link: "/",
@@ -10,18 +10,18 @@ const LINKS = [
     },
     {
         color: "#E71D36",
-        link: "/",
+        link: "/what",
         text: "What?",
     },
     {
         color: "#2EC4B6",
-        link: "/",
-        text: "Why?",
+        link: "/who",
+        text: "Who?",
     },
     {
         color: "#FF9F1C",
-        link: "/",
-        text: "Home",
+        link: "/why",
+        text: "Why?",
     },
     {
         color: "#011627",
@@ -39,7 +39,7 @@ const Menu = () => {
     const [id, setId] = useState(0);
 
     return (
-        <MenuDiv>
+        <MenuDiv active={id === 0}>
             {LINKS.map((linkObject, index) => (
                 <MenuItem
                     {...linkObject}
