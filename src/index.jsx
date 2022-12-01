@@ -5,7 +5,9 @@ import App from "./App";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import How from "./pages/How";
 import What from "./pages/What";
+import Where from "./pages/Where";
 import Who from "./pages/Who";
 import Why from "./pages/Why";
 import reportWebVitals from "./reportWebVitals";
@@ -45,6 +47,14 @@ const router = createBrowserRouter([
                     {
                         path: "/why",
                         element: <Why />,
+                    },
+                    {
+                        path: "/where",
+                        element: <Where />,
+                    },
+                    {
+                        path: "/how",
+                        element: <How />,
                     },
                 ],
             },

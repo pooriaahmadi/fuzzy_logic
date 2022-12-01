@@ -13,19 +13,23 @@ export const FooterMain = styled.footer`
 
 export const Left = styled.div`
     display: flex;
-    justify-content: center;
     align-content: center;
     gap: 20px;
+    width: 100%;
     h1 {
         font-weight: bold;
     }
-    a {
+    p {
+        width: fit-content;
+        display: flex;
+        align-items: center;
+
+        gap: 10px;
+    }
+    span > a {
         text-decoration: none;
         color: #0069ff;
     }
-`;
-
-export const Right = styled.div`
     a {
         display: flex;
         justify-content: center;
@@ -42,3 +46,5 @@ export const Right = styled.div`
         }
     }
 `;
+
+export const Right = styled.div``;

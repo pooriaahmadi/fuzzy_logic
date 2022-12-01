@@ -21,15 +21,13 @@ const Footer = () => {
                         Pooria Ahmadi
                     </a>
                 </p>
-            </Left>
-            <Right>
                 <a
                     target="_blank"
                     href="https://github.com/pooriaahmadi/fuzzy_logic"
                 >
                     <img src={githubLogo} />
                 </a>
-            </Right>
+            </Left>
         </FooterMain>
     );
 };

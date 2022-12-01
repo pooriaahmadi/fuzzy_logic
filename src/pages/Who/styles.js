@@ -16,8 +16,6 @@ export const TextImage = styled.div`
     flex-wrap: wrap;
     > img {
         border-radius: 20px;
-        width: 100%;
-        flex-basis: 40%;
         flex-grow: 1;
         height: fit-content;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

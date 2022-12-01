@@ -21,17 +21,17 @@ export const LINKS = [
     {
         color: "#FF9F1C",
         link: "/why",
-        text: "Why?",
+        text: "Why",
     },
     {
         color: "#011627",
-        link: "/",
-        text: "Home",
+        link: "/where",
+        text: "Where?",
     },
     {
         color: "#0069ff",
-        link: "/",
-        text: "Home",
+        link: "/how",
+        text: "How?",
     },
 ];
 

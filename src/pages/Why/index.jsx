@@ -4,26 +4,27 @@ import { Logic, Logics, LogicTitle } from "../What/styles";
 import { TextImage } from "../Who/styles";
 import { NewOptions, WhyMain } from "./styles";
 import graph from "../../images/graph.png";
+import Takeaways from "../../components/Takeaways";
 
 const Why = () => {
     return (
         <WhyMain>
-            <Explanation title="Why we need Fuzzy Logic?">
+            <Takeaways></Takeaways>
+
+            <Explanation title="Why do we need Fuzzy Logic?">
                 <p>
-                    Zadeh’s argument resembled an idea that Albert Einstein had
-                    expressed four decades earlier, in his book “Geometry and
-                    Experience.” “So far as the laws of mathematics refer to
-                    reality, they are not certain,” Einstein wrote. “And as so
-                    far as they are certain, they do not refer to reality.”
-                    Fuzzy logic emerged in the context of the theory of fuzzy
-                    sets, introduced by Lotfi Zadeh (1965). A fuzzy set assigns
-                    a degree of membership, typically a real number from the
-                    interval [0,1][0,1], to elements of a universe. Fuzzy logic
-                    arises by assigning degrees of truth to propositions. The
-                    standard set of truth-values (degrees) is the real unit
-                    interval [0,1][0,1], where 00 represents “totally false”, 11
-                    represents “totally true”, and the other values refer to
-                    partial truth, i.e., intermediate degrees of truth.
+                    We use fuzzy logic in our daily lives so often that we do
+                    not know that it even exists. The problems that we encounter
+                    everyday are not easily represented by the boolean logic or
+                    in other words true and false. The solutions to our problems
+                    are often somewhere in between or closer to one side than
+                    the other but not absolutely true or false. That is why we
+                    use fuzzy sets to find the answer that would make the most
+                    sense but not always efficient. For example If there is a
+                    50/50 chance that it will rain when planning to go outside,
+                    we dress up to cover both possibilities rather than covering
+                    ourselves with waterproof coats or completely ignoring the
+                    rain.
                 </p>
             </Explanation>
             <Logics>
@@ -56,17 +57,22 @@ const Why = () => {
             </Logics>
             <TextImage>
                 <Explanation
-                    title="Who came up with Fuzzy Logic?"
+                    title="“Precision is not Truth” — Henri E. B. Matisse"
                     style={{ flexBasis: "30%", flexGrow: "1" }}
+                    source="https://medium.com/it-paragon/fuzzy-logic-approximating-imprecise-statement-54d444237820"
                 >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Illum numquam quis harum? Fugiat, obcaecati! Laborum vel
-                    laudantium provident odio incidunt explicabo, labore qui id
-                    veniam exercitationem error fuga deserunt amet. Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Dolor debitis
-                    repudiandae, qui perspiciatis saepe ex harum quisquam
-                    ratione fugiat dolorem soluta delectus quam iure voluptatum
-                    illum, sit impedit sed ducimus.
+                    <p>
+                        What comes to mind when you think of the word "warm"? Is
+                        it a warm cup of coffee in the middle of the winter or a
+                        day in the summer? When we describe something, the words
+                        we use can have different meanings to different people.
+                        For instance, to one person, the term "warm" may refer
+                        to something with a temperature of about 40 degrees
+                        Celsius. In this case, how warm is "warm," the graph on
+                        the right side of the website will demonstrate how fuzzy
+                        logic can provide us with a workable solution to our
+                        problem.
+                    </p>
                 </Explanation>
                 <img style={{ flexBasis: "10%" }} src={graph} />
             </TextImage>
@@ -74,28 +80,37 @@ const Why = () => {
                 <Explanation
                     title="Data Mining and Fuzzy Logic:"
                     style={{ flexBasis: "45%", flexGrow: "1" }}
+                    source="https://www.investopedia.com/terms/f/fuzzy-logic.asp"
                 >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Illum numquam quis harum? Fugiat, obcaecati! Laborum vel
-                    laudantium provident odio incidunt explicabo, labore qui id
-                    veniam exercitationem error fuga deserunt amet. Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Dolor debitis
-                    repudiandae, qui perspiciatis saepe ex harum quisquam
-                    ratione fugiat dolorem soluta delectus quam iure voluptatum
-                    illum, sit impedit sed ducimus.
+                    <p>
+                        Data mining, a field that includes statistics, machine
+                        learning, and computer science, is the process of
+                        finding significant relationships between large datasets
+                        of data. A set of rules known as fuzzy logic can be used
+                        to draw logical conclusions from ambiguous sets of data.
+                        Fuzzy logic is a helpful method for extracting
+                        meaningful relationships from this type of data because
+                        data mining is frequently used to analyse imperfect
+                        measurements.
+                    </p>
                 </Explanation>
                 <Explanation
                     title="Fuzzy Logic in Artificial Intelligence?"
                     style={{ flexBasis: "45%", flexGrow: "1" }}
+                    source="https://www.investopedia.com/terms/f/fuzzy-logic.asp"
                 >
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Illum numquam quis harum? Fugiat, obcaecati! Laborum vel
-                    laudantium provident odio incidunt explicabo, labore qui id
-                    veniam exercitationem error fuga deserunt amet. Lorem, ipsum
-                    dolor sit amet consectetur adipisicing elit. Dolor debitis
-                    repudiandae, qui perspiciatis saepe ex harum quisquam
-                    ratione fugiat dolorem soluta delectus quam iure voluptatum
-                    illum, sit impedit sed ducimus.
+                    <p>
+                        Although they are frequently combined, fuzzy logic and
+                        machine learning are not quite the same. Fuzzy Logic
+                        uses sets of rules to categorise and label data, whereas
+                        machine learning uses various coping algorithms to
+                        determine how humans perceive patterns in sets of data.
+                        Although machine learning and fuzzy logic pursue related
+                        objectives in different ways, these two techniques are
+                        used in artificial intelligence (AI) to improve training
+                        efficiency by giving the system more accurate and useful
+                        data
+                    </p>
                 </Explanation>
             </TextImage>
         </WhyMain>

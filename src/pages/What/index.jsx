@@ -2,6 +2,7 @@ import { useState } from "react";
 import Explanation from "../../components/Explanation";
 import { Title } from "../../components/Explanation/styles";
 import Option from "../../components/Option";
+import Takeaways from "../../components/Takeaways";
 import {
     Logic,
     Logics,
@@ -25,15 +26,27 @@ const What = () => {
 
     return (
         <WhatMain>
-            <Explanation title="What is Fuzzy Logic?">
+            <Takeaways>
                 <p>
-                    like most other activities in life and indeed the universe
-                    -- is not easily translated into the absolute terms of 0 and
-                    1. Whether everything is ultimately describable in binary
-                    terms is a philosophical question worth pursuing, but in
-                    practice, much data we might want to feed a computer is in
-                    some state in between and so, frequently, are the results of
-                    computing
+                    Fuzzy logic is better than boolean logic in real world
+                    problems
+                </p>
+                <p>Probability and Fuzzy Logic are NOT the same</p>
+            </Takeaways>
+            <Explanation
+                title="What is Fuzzy Logic?"
+                source="https://www.geeksforgeeks.org/fuzzy-logic-introduction/"
+            >
+                <p>
+                    The term “fuzzy” refers to things that are unclear or vague.
+                    In the real world, we frequently encounter situations in
+                    which we are unable to determine whether a state is true or
+                    false; their fuzzy logic provides extremely valuable
+                    flexibility for reasoning. In this way, we can consider any
+                    situation’s inaccuracies and uncertainties. Boolean logic is
+                    only able to output the extreme versions of the answer and
+                    when the answer is 50/50, the output of boolean logic is
+                    going to be inaccurate or not practical.
                 </p>
             </Explanation>
             <QuestionDiv>
@@ -62,12 +75,9 @@ const What = () => {
                                 }}
                             >
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quia ducimus sit
-                                    dignissimos dolores esse natus atque, modi
-                                    maiores illo nam ipsam omnis tenetur debitis
-                                    nemo nobis laboriosam recusandae, magnam
-                                    veritatis!
+                                    Since a 35° cup of coffee is neither hot nor
+                                    cold, none of the answers are true. That’s
+                                    were fuzzy logic comes in handy
                                 </p>
                             </Explanation>
                         )}
@@ -100,18 +110,35 @@ const What = () => {
                                 }}
                             >
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Quia ducimus sit
-                                    dignissimos dolores esse natus atque, modi
-                                    maiores illo nam ipsam omnis tenetur debitis
-                                    nemo nobis laboriosam recusandae, magnam
-                                    veritatis!
+                                    “Very little” and “Very much” are the same
+                                    as “yes” or “no” in Boolean logic, thus
+                                    making them impractical for the answer. Many
+                                    people classify 35 degrees celsius in
+                                    various groups so the 3 options between
+                                    “very little” and “very much” are
+                                    correct/practical
                                 </p>
                             </Explanation>
                         )}
                     </Logic>
                 </Logics>
             </QuestionDiv>
+            <Explanation
+                title="The Degrees of Truth"
+                source="https://academickids.com/encyclopedia/index.php/Degree_of_truth"
+            >
+                <p>
+                    Since 0 and 1 are not going to be practical in our real life
+                    problems, any real number between 0 and 1 is what would be
+                    suited as answers to our problems. The Degrees of Truth
+                    refers to any real numbers between 0 and 1 that would be the
+                    closest to what we would need in our real life problems;
+                    However this concept should not be confused with
+                    probability. A coin has a 50/50 chance of being absolute 0
+                    and 1; While The Degrees of Truth can be whatever between 0
+                    and 1.
+                </p>
+            </Explanation>
         </WhatMain>
     );
 };
